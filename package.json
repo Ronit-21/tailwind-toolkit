@@ -1,0 +1,68 @@
+{
+  "name": "tailwind-tooltip",
+  "displayName": "Tailwind Tooltip",
+  "description": "Provides description to tailwind classes on hover in simple english",
+  "version": "0.0.1",
+  "publisher": "ronitkedia21",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ronit-21/tailwind-toolkit"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "tailwind",
+    "css",
+    "hover",
+    "documentation",
+    "explainer"
+  ],
+  "galleryBanner": {
+    "color": "#0EA5E9",
+    "theme": "dark"
+  },
+  "activationEvents": [
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
+    "onLanguage:jsx",
+    "onLanguage:tsx"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.x",
+    "@types/react": "^19.1.8",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-electron": "^2.3.8",
+    "esbuild": "^0.25.5",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.3.3",
+    "@vscode/vsce": "^2.24.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  }
+}
