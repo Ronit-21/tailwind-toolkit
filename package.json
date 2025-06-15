@@ -2,7 +2,7 @@
   "name": "tailwind-tooltip",
   "displayName": "Tailwind Tooltip",
   "description": "Provides description to tailwind classes on hover in simple english",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ronitkedia21",
   "private": false,
   "license": "MIT",
@@ -44,7 +44,8 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "package": "vsce package"
+    "package": "vsce package",
+    "release": "npm run compile && vsce publish"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",

@@ -13,3 +13,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Support for JSX and TSX files
 - Detailed class descriptions with categories
 - Support for classes with dashes and colons
+
+## [0.0.2]
+
+### Added
+
+- Added support for more tailwind classes.
